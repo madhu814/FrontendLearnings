@@ -1,0 +1,60 @@
+body{
+    text-align: center;
+}
+
+div{
+    height: 100px;
+    width:150px;                /*flex items(like div,span or section) will try to fit inside their content until there content allows them, even though their total size exceeds the container size*/
+    display: inline-block;
+    border:3px solid black;
+    font-size: 16px
+    
+}
+
+#container
+{
+    width: 600px;
+    height: 600px;
+    display:flex;     /*Making display as flex means that the property flex is now enabled, you can use it.By default the direction of flex is row*/
+    flex-direction: row;  /*Display elements left to right*/
+    /* flex-direction: row-reverse; /*Display elements right to left*/
+    /* flex-direction: column;   /*Display elements in column (vertically) here elements will try to fit them inside their container only,even though their was bigger until their content(ex. font size of text written inside the div and not size of div) allow, if not they will expand*/
+    /*flex-direction: column-reverse; Display elements in column,but in reverse order */
+      /* justify-content: flex-start;  will align items from the start of main axis, left to right */
+      /* justify-content: flex-end;      will align items from the end(order remains same) of main axis, right to left */
+      /* justify-content: center;         will align items in the center of the main axis */
+      /* justify-content: space-around;   /*space between the content and between the contents and container is made, where space between any two content within the container is double of the space between the one/last content and the container*/
+      /* justify-content: space-between;    /*space between the contents is only made and no space between first/last content and the container*/
+      /* justify-content: space-evenly;  even space is made between the contents and the first/last content and the container */ 
+      /* align-items: center;        align items align along cross axis. */
+      justify-content: center; 
+      /* flex-wrap: wrap;         wrapping the items into multiple lines           */
+        align-items: flex-start;  /* align item to the start of cross axis and here between the two item separated by an imaginary line due to wrapping space will be created
+       align-content: flex-start;     align item to the start of cross axis  but here between the two item separated by an imaginary line due to wrapping space will not be created
+        */
+}
+
+#box1
+{
+    background-color: aqua;
+    
+}
+#box2
+{
+    background-color:aquamarine;
+    height:200px;
+     /* align-self: flex-end;   /*This align self changes position of this particular box only with respect to cross axis */
+} */
+#box3
+{
+    background-color:bisque;
+    height:75px;
+}
+#box4
+{
+    background-color:yellowgreen;
+}
+#box5
+{
+    background-color:burlywood;
+}

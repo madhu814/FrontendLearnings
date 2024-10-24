@@ -1,0 +1,40 @@
+body{
+    background-image: url("Desires.jpg");
+    background-size: cover;
+}
+#box1,#box2
+{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 10px;
+    background-image: url("QuoteImg.jpg");
+    background-size: cover;             /*will completey fit/cover the area*/
+}
+#box3
+{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 10px;
+    background-image: url("QuoteImg.jpg");
+    background-size: auto;             /*only that much part which can be visible it is displayed in that area*/
+}
+#box4
+{
+    color: aqua;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 10px;
+    background-image: url("BetterDaysAheadPhoto.jpg");
+    background-size: contain;        /*image will get completely fit in the area, and in order to do so it will repeat itself so as to fill the empty spaces left*/ 
+    background-repeat: no-repeat;       /*in order to avoid its repetition we use this, using this the left space is filled with its background colour*/
+}
+/* #box7
+{
+    height: 1000px;
+    width: 1000px;
+    background-image: url("Desires.jpg");
+    background-size: cover;   
+} */

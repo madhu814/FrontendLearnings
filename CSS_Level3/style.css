@@ -1,0 +1,18 @@
+#box1 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    font-size: 10px;
+}
+
+#box2 {
+    
+    width: 50%;                               /*width of box2 set to 50% of box1(its parent)  this is the use of percentage as a unit*/
+    background-color: burlywood;
+    margin-left: 10%;                        /*margin of box2 set to 10% of box1(its parent)*/
+    font-size: 2em;                           /*2em means the font size of box2(child) has to be twice as that of the box1(its parent)*/
+    width: 5em;                              /*For width 5em means 5 times of the font size of its own(box2)*/
+    height: 5rem;                               /* rem means that much times of the height/or any property used of its root element like any outer text*/
+    height:1vh;                                 /* 1vh means 1% height of the view port*/
+    width: 1vw;                                 /* 1vw means 1% width of the view port*/
+}

@@ -1,0 +1,48 @@
+.contentArea
+{
+    height: 100px;
+    width: 100px;
+    border: solid black;
+    display: inline-table;
+    margin: 20px;
+
+}
+*
+{
+    padding:0;
+    margin:0;
+    
+}
+#navbar
+{
+ height: 60px;
+ background-color: #0f1111;
+ color: white;
+}
+button
+{
+    background-color: #f08804;
+}
+#logo
+{
+    color:#f08804;
+    /* display: none; For removing the text*/ 
+    /* display:block; act like div */
+    font-size: 25px;
+}
+a
+{
+ margin-right: 200px;
+ text-decoration: none;
+ color: white;
+}
+footer
+{
+    background-color: #0f1111;
+    color:white ;
+    text-align: center;
+}
+#content
+{
+    height: 700px;;
+}

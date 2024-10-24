@@ -1,0 +1,43 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    display: inline-block;
+}
+#box1{
+    position: static;        /*By default our position is set to static which means when using pproperties like top,right,bottom,left and z-index have no effect*/
+}
+/*here for position top,right,bottom and left refers to shifting the box's position from these properties whichever we mention*/
+
+/*box2 and box6 are overlapping but which one will be above the other is decided by the z-index, by default the z-index of the elements is 0 and so by default the element written 1st gets beneath the 2nd one*/
+/*but if we asssign a z-index to one element greater than the other then that element appear above the second one in overlapping of the two*/ 
+#box2{
+    position: relative;          /*Means shifting from  top,right,bottom and left  relative to its own postion*/
+    top:10px;                        /*Shifting down 10px from top of its own position*/
+    left: 10px;                       /*Shifting right(means left se ho raha) 10px from left of its own position*/
+    right:-10px;                         /*Shifting right(means right se ho raha) 10px from right of its own position*/
+    z-index: 1;
+}
+#box3{
+    position:absolute;      /*this means the element will be positioned relative to its closest positioned(non static) ancestor(removed from flow) here for box3 the closest ancestor(is the body tag/the whole document)*/
+    bottom: 100px;           /*Shifted from bottom of document by 100px*/
+}
+#box4{
+    position: fixed;      /*Changing position to fixed means the element is positioned relative to browser*/
+    right: 10px;
+    bottom:0;                 /*Fixing at the bottom*/
+    width:100vw;                 /*Taking full width of the view port*/
+    /*all these things which we did for box4 its mainly done for footer so that it gets fixed to the bottom of our viewport*/
+
+}
+#box5{
+    position: fixed;
+    top:0;                            /*Fixed on top like nav bar*/
+
+}
+#box6  {
+    position: sticky;              /*Postioned based on user's scroll postion.. its Position gets fixed when it appears while scrolling*/
+    top: 0px;
+    left: 20px;
+}
